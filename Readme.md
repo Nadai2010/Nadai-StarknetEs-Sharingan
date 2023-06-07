@@ -36,7 +36,7 @@ gh repo clone keep-starknet-strange/madara
 cargo build --workspace --release
 ```
 
-![Graph](/im%C3%A1genes/Captura%20desde%202023-06-07%2009-49-44.png)
+![Graph](/im%C3%A1genes/build.png)
 
 
 3. Aquí es posible que te encuentres con algunos errores debido a la falta de dependencias. Puedes consultar la sección de errores para obtener más información sobre cómo solucionarlos.
@@ -60,7 +60,7 @@ curl --header "Content-Type: application/json" \
     "id":1
 }' http://52.7.206.208:9933
 ```
-![Graph](/im%C3%A1genes/Captura%20desde%202023-06-07%2011-44-09.png)
+![Graph](/im%C3%A1genes/hashnumber.png)
 
 ## Operadores
 Para una iformación más detallada consulte Debate sobre [Sharingan](https://github.com/keep-starknet-strange/madara/discussions/553)
