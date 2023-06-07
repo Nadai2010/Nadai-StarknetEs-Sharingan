@@ -151,70 +151,6 @@ Siempre es recomendable revisar la documentación y consultar la comunidad en ca
 | starknet_addDeclareTransaction           | :white_check_mark: |
 | starknet_addDeployAccountTransaction     | :white_check_mark: |
 
-## Ultimo bloque y Hash
-
-```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{
-   "jsonrpc": "2.0",
-    "method": "starknet_blockHashAndNumber",
-    "params": [],
-    "id":1
-}' http://52.7.206.208:9933
-```
-
-Foto
-
-### Ultimo Bloque
-
-```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{
-   "jsonrpc": "2.0",
-    "method": "starknet_blockNumber",
-    "params": [],
-    "id":1
-}' http://52.7.206.208:9933
-```
-
-Foto
-
-## Chain ID
-
-```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{
-   "jsonrpc": "2.0",
-    "method": "starknet_chainId",
-    "params": [],
-    "id":1
-}' http://52.7.206.208:9933
-```
-
-foto
-
-En este `0x534e5f474f45524c49` caso la traduccion en hezadecimal es SNGOERLI.
-
-## 
-
-```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{
-   "jsonrpc": "2.0",
-    "method": "starknet_getBlockTransactionCount",
-    "params": [
-        "latest"
-    ],
-    "id":1
-}' http://52.7.206.208:9933
-```
-
-Foto
-
 ## Bloques y Hash
 
 ```bash
@@ -229,8 +165,71 @@ curl --header "Content-Type: application/json" \
     "id":1
 }' http://52.7.206.208:9933
 ```
+![Graph](/im%C3%A1genes/blocktxhash.png)
 
-##
+## Ultimo bloque y Hash
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{
+   "jsonrpc": "2.0",
+    "method": "starknet_blockHashAndNumber",
+    "params": [],
+    "id":1
+}' http://52.7.206.208:9933
+```
+
+![Graph](/im%C3%A1genes/hashnumber.png)
+
+### Ultimo Bloque
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{
+   "jsonrpc": "2.0",
+    "method": "starknet_blockNumber",
+    "params": [],
+    "id":1
+}' http://52.7.206.208:9933
+```
+
+![Graph](/im%C3%A1genes/blocknumber.png)
+
+## Chain ID
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{
+   "jsonrpc": "2.0",
+    "method": "starknet_chainId",
+    "params": [],
+    "id":1
+}' http://52.7.206.208:9933
+```
+
+![Graph](/im%C3%A1genes/chainid.png)
+
+En este `0x534e5f474f45524c49` caso la traduccion en hezadecimal es SNGOERLI.
+
+## Transaciones pendientes
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{
+    "jsonrpc": "2.0",
+    "method": "starknet_syncing",
+    "params": [],
+    "id":1
+}' http://52.50.242.182:9933
+```
+
+![Graph](/im%C3%A1genes/sync.png)
+
+## Bloques y Tx
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -238,6 +237,21 @@ curl --header "Content-Type: application/json" \
   --data '{
    "jsonrpc": "2.0",
     "method": "starknet_getBlockWithTxs",
+    "params": [
+        "latest"
+    ],
+    "id":1
+}' http://52.7.206.208:9933
+```
+
+## Contador de Transacciones en Bloque
+
+```bash
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{
+   "jsonrpc": "2.0",
+    "method": "starknet_getBlockTransactionCount",
     "params": [
         "latest"
     ],
@@ -291,15 +305,3 @@ curl --header "Content-Type: application/json" \
 }' http://52.50.242.182:9933
 ```
 
-## Transaciones pendientes
-
-```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{
-    "jsonrpc": "2.0",
-    "method": "starknet_syncing",
-    "params": [],
-    "id":1
-}' http://52.50.242.182:9933
-```
