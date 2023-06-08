@@ -65,21 +65,14 @@ curl --header "Content-Type: application/json" \
 ## Operadores
 Para una iformación más detallada consulte Debate sobre [Sharingan](https://github.com/keep-starknet-strange/madara/discussions/553)
 
-### Secuenciador Strarware 
-* 52.7.206.208:9933
-* 44.195.161.82:9933
-
-### Cartridge
-* 208.67.222.222:80
-
-### LamdaClass
-* 65.109.91.29:9933
-
-### Pragma
-* 13.39.22.82:9933
-
-### Kakarot
-* 52.50.242.182:9933
+| Mantenedor | ID | Alias de clave | IP | ID de par | Puerto RPC |
+|------------|----|-----------|----|---------|----------|
+| Starkware  | 1  | alice     | `52.7.206.208` | `12D3KooWJytWW4wqhG1xp9ckLb7B15KqDU24Q8HHo8VfwXmFe5ZE` | `9933` |
+| Starkware  | 2  | bob     | `44.195.161.82` | `12D3KooWHocNfvLz6rgpb8wJsynSpMwkspkcRn6gmN5UiK1tTTeG` | `9933` |
+| Cartridge  | 3  | charlie     | `208.67.222.222` | `12D3KooWQe2ZtqiyC5CLJKZr9i9xTmEyiAikZcr5J18w3cG1dQAc` | `9933` |
+| LambdaClass  | 4  | dave     | `65.109.91.29` | `12D3KooWK8QhFjkGYGyMskDuCyaS1nrhfTfadMeRjJkox4SV32co` | `9933` |
+| Pragma  | 5  | eve     | `13.39.22.82` | `12D3KooWGMCGJ517tFor12U9n2v3ax5WNw1pXFdj48hSHYQe6oyJ` | `9933` |
+| Kakarot  | 6  | ferdie     | `52.50.242.182` | `12D3KooWHnQ8LC113DgB5cVVyx2mvTN7bBkm75zvzsndr2WhstEE` | `9933` |
 
 ## Errores
 
