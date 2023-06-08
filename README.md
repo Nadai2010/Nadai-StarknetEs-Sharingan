@@ -21,13 +21,13 @@ En esta testnet, Starknet se está probando de forma descentralizada, donde los 
 
 Pero también hay nodos que participan solo en el almacenamiento de datos, sin participar en el consenso.
 
-Aunque Madara se llama "Secuenciador de Starknet", distinguimos dos tipos de nodos en Sharingan:
+Aunque Madara se llama `Secuenciador de Starknet`, distinguimos dos tipos de nodos en Sharingan:
 
 1. Madara como `secuenciador`, participando en el consenso.
 2. Madara como `nodo completo` (fullnode), utilizado para la persistencia de datos.
 
-Para el resto de la guía, "secuenciador" se referirá a una instancia de Madara que participa en el consenso,
-y "nodo completo" se referirá a una instancia de Madara utilizada para la persistencia de datos.
+Para el resto de la guía, `secuenciador` se referirá a una instancia de Madara que participa en el consenso,
+y `full node` se referirá a una instancia de Madara utilizada para la persistencia de datos.
 
 El objetivo de Sharingan es comenzar a probar Starknet de forma descentralizada y también brindar acceso a todos para participar y probar la red de Starknet.
 
@@ -71,7 +71,7 @@ Para participar en Sharingan como un `fullnode`, tienes dos opciones:
 
 ### Forma sencilla: imagen de Docker
 
-Hay una imagen de Docker creada para Sharingan, que se actualizará en cada versión de Sharingan. Sin embargo, para asegurarte de que estás utilizando las "chain specs" correctas, sigue los siguientes pasos:
+Hay una imagen de Docker creada para Sharingan, que se actualizará en cada versión de Sharingan. Sin embargo, para asegurarte de que estás utilizando las `chain specs` correctas, sigue los siguientes pasos:
 
 1. Descarga el [código fuente](https://github.com/keep-starknet-strange/madara/releases/tag/v0.1.0-testnet-sharingan-alpha.4) de la versión actual de la versión de Sharingan (actualmente `v0.1.0-testnet-sharingan-alpha.4`).
 
