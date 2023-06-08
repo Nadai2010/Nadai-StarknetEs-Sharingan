@@ -20,8 +20,9 @@ En esta testnet, Starknet se está probando de forma descentralizada, donde los 
 Pero también hay nodos que participan solo en el almacenamiento de datos, sin participar en el consenso.
 
 Aunque Madara se llama "Secuenciador de Starknet", distinguimos dos tipos de nodos en Sharingan:
-1. Madara como "secuenciador", participando en el consenso.
-2. Madara como "nodo completo" (fullnode), utilizado para la persistencia de datos.
+
+1. Madara como `secuenciador`, participando en el consenso.
+2. Madara como `nodo completo` (fullnode), utilizado para la persistencia de datos.
 
 Para el resto de la guía, "secuenciador" se referirá a una instancia de Madara que participa en el consenso,
 y "nodo completo" se referirá a una instancia de Madara utilizada para la persistencia de datos.
@@ -35,8 +36,9 @@ Más sobre esto en la sección dedicada a RPC.
 
 ## Tipología de Sharingan
 
-Como se mencionó, Sharingan se basa en "secuenciadores" para producir, validar y agregar bloques a la cadena.
-Hasta ahora, Sharingan tiene los siguientes "secuenciadores" conocidos:
+Como se mencionó, Sharingan se basa en `secuenciadores` para producir, validar y agregar bloques a la cadena.
+
+Hasta ahora, Sharingan tiene los siguientes `secuenciadores` conocidos:
 
 | Mantenedor | ID | Alias de clave | IP | ID de par | Puerto RPC |
 |------------|----|-----------|----|---------|----------|
@@ -53,17 +55,17 @@ Actualmente, Starkware elige los `secuenciadores`, y solo puedes unirte como un 
 
 Como Madara está utilizando Substrate, existe una aplicación web existente que te permite monitorear el estado de Sharingan. Y para verificar la tipología del nodo, puedes ir directamente aquí a la pestaña de [información del nodo](https://starknet-madara.netlify.app/?rpc=wss%3A%2F%2Fsharingan.cartridge.gg/#/explorer/node).
 
-Actualmente, los "secuenciadores" son elegidos por Starkware, y solo puedes unirte como un "fullnode".
+Actualmente, los `secuenciadores` son elegidos por Starkware, y solo puedes unirte como un `fullnode`.
 
-## Participar en Sharingan como un "fullnode"
+## Participar en Sharingan como un fullnode
 
 Para participar en Sharingan, hay algunas consideraciones que debes tener en cuenta:
 
 1. El código de Madara que ejecutarás deberá exponer dos puertos: uno para la comunicación entre pares, que actualmente es `30333`, y otro para la RPC mencionada anteriormente, que generalmente es `9933`.
 
-2. Substrate utiliza "chain specs" para que todos los nodos participantes estén sincronizados en cómo colaborar en la red. La especificación de la cadena también es especial en Substrate, ya que incluye lo que llamamos el tiempo de ejecución, donde definimos cómo se procesan las transacciones dentro de los nodos.
+2. Substrate utiliza `chain specs` para que todos los nodos participantes estén sincronizados en cómo colaborar en la red. La especificación de la cadena también es especial en Substrate, ya que incluye lo que llamamos el tiempo de ejecución, donde definimos cómo se procesan las transacciones dentro de los nodos.
 
-Para participar en Sharingan como un "fullnode", tienes dos opciones:
+Para participar en Sharingan como un `fullnode`, tienes dos opciones:
 
 ### Forma sencilla: imagen de Docker
 
@@ -73,7 +75,7 @@ Hay una imagen de Docker creada para Sharingan, que se actualizará en cada vers
 
 2. Extrae el archivo para acceder más tarde al archivo de interés, que es `madara/infra/chain-specs/testnet-sharingan-raw.json`.
 
-3. Ejecuta el contenedor de Docker, donde utilizaremos 2 volúmenes. Uno para acceder al archivo de "chain specs" y otro para el almacenamiento de los datos de la cadena.
+3. Ejecuta el contenedor de Docker, donde utilizaremos 2 volúmenes. Uno para acceder al archivo de `chain specs` y otro para el almacenamiento de los datos de la cadena.
 
 ```bash
 sudo docker run -v /tmp:/data \
@@ -98,7 +100,7 @@ Si prefieres tener Madara compilado localmente, debes:
 1. Clonar el repositorio de [Madara](https://github.com/keep-starknet-strange/madara).
 2. Hacer checkout en la etiqueta `v0.1.0-testnet-sharingan-alpha.4`.
 3. Ejecutar `cargo build --workspace --release` (puedes consultar [esta guía](https://github.com/keep-starknet-strange/madara/blob/main/docs/rpc-contribution.md) con información sobre cómo compilar Madara).
-4. Ejecutar el "fullnode" (en una ventana de terminal o cualquier otro método para mantenerlo en ejecución) desde la raíz del repositorio de Madara:
+4. Ejecutar el `fullnode` (en una ventana de terminal o cualquier otro método para mantenerlo en ejecución) desde la raíz del repositorio de Madara:
 
 ```bash
 ./target/release/madara \
