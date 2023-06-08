@@ -182,4 +182,6 @@ Esta será la forma más efectiva de iniciar la descentralización de Starknet.
 
 Por ahora, puedes tomar contratos existentes de Cairo 0 y probarlos en Sharingan, ¡pero prepárate! Quantum Leap se acerca y ¡Madara no se queda atrás...! :rocket:
 
+Si quiere consultar la [versión oficial en inglés entre aquí](https://gist.github.com/glihm/dcb92a18efbefb374b21e28e9144712f)
+
 ¡Sigamos construyendo y gracias por ser parte o tener interés en la red de prueba Sharingan!
